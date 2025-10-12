@@ -20,8 +20,8 @@
 
 {Make a list of websites that you found helpful in this project}
 
-- [Web Site Name](http://url.link.goes.here)
-- [Web Site Name](http://url.link.goes.here)
+- [C++ Variables](https://www.w3schools.com/cpp/cpp_variables.asp)
+- [Environment setting](https://code.visualstudio.com/docs/languages/cpp)
 
 # Future Work
 
