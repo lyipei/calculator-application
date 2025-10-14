@@ -26,5 +26,5 @@ The project demonstrates:
 # Future Work
 
 - Add more advanced operations such as square roots, exponents,and percentages.
-- Add memory features to store and recall past results.
+- Add Improve input validation to handle non-numeric input safely.
 - Include unit tests to automatically verify the correctness of each operation.

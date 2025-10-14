@@ -71,6 +71,8 @@ void Menu() {
 int main() {
     int choice;
     double number1, number2;
+    vector<double> history; // to store history of calculations
+
 
     while (true) {
         Menu(); //show menu
@@ -130,6 +132,7 @@ int main() {
         // show result
         double result = calculator -> calculate(number1, number2);
         cout << "Result of " << calculator -> getName() << ": " << result << endl;
+        history.push_back(result);
 
         // ask user if they want to perform another operation
         char again;
@@ -137,6 +140,18 @@ int main() {
         cin >> again;
 
         if (again == 'n' || again == 'N') {
+            cout << "\nCalculation History:\n";
+
+            // I used ChatGPT to help me understand how to use the C++ Standard Template Library (STL), specifically how to implement a std::vector to store and display the calculation history in my program.
+            // The AI provided example code and explanations about how to:
+
+                // Declare and initialize a vector to hold past results
+                // Add new results using the push_back() method
+                // Iterate through the vector with a for loop to print all stored calculations
+
+            for  (size_t i = 0; i < history.size(); ++i) {
+                cout << i + 1 << ": " << history[i] << endl;
+            }
             cout << "Exiting the application. See you next time!" << endl;
             break;
         }
