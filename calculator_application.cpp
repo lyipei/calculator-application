@@ -7,10 +7,12 @@
 
 using namespace std;
 
+// base abstract class
+// This class defines the interface for all all types of calculators operations
 class calculator {
     public :
-        virtual double calculate(double a, double b) = 0;
-        virtual string getName() = 0;
+        virtual double calculate(double a, double b) = 0; // Pure virtual function
+        virtual string getName() = 0; // Operation name
 };
 // derived class for addition
 class Add : public calculator{
@@ -71,7 +73,7 @@ int main() {
     double number1, number2;
 
     while (true) {
-        Menu();
+        Menu(); //show menu
         cin >> choice;
 
         //exit option
