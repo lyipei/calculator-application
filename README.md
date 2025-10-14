@@ -1,32 +1,30 @@
 # Overview
 
-{Important! Do not say in this section that this is college assignment. Talk about what you are trying to accomplish as a software engineer to further your learning.}
+This project is a C++ Calculator Program that demonstrates the use of object-oriented programming principles such as inheritance and polymorphism. The calculator allows users to perform basic arithmetic operations: addition, subtraction, multiplication, and division. It also includes a feature to convert fractions to decimals.
 
-{Provide a description of the software that you wrote to demonstrate the C++ language.}
-
-{Describe your purpose for writing this software.}
-
-{Provide a link to your YouTube demonstration. It should be a 4-5 minute demo of the software running and a walkthrough of the code. Focus should be on sharing what you learned about the language syntax.}
+The purpose of this project is to strengthen understanding of C++ suntax, class design, and method overriding, and to gain more hands-on experience in writing modular and reusable code. Building this calculator helped better understand how to structure class, manage dynamic objects, and apply inheritance in practical software design.
 
 [Software Demo Video](http://youtube.link.goes.here)
 
 # Development Environment
 
-{Describe the tools that you used to develop the software}
+The program was developed using Visual Studio Code with the C++ extension for compiling and debugging.
 
-{Describe the programming language that you used and any libraries.}
+I used the C++ programming language, which is known for its efficiency, flexibility, and strong object-oriented features.
+
+The project demonstrates:
+- Use of classes and inheritance
+- The override keyword to redefine virtual functions.
+- Implementation of switch-case menus and loops for user interaction
+- Proper handling of division by zero and invalid user input.
 
 # Useful Websites
-
-{Make a list of websites that you found helpful in this project}
 
 - [C++ Variables](https://www.w3schools.com/cpp/cpp_variables.asp)
 - [Environment setting](https://code.visualstudio.com/docs/languages/cpp)
 
 # Future Work
 
-{Make a list of things that you need to fix, improve, and add in the future.}
-
-- Item 1
-- Item 2
-- Item 3
+- Add more advanced operations such as square roots, exponents,and percentages.
+- Add memory features to store and recall past results.
+- Include unit tests to automatically verify the correctness of each operation.

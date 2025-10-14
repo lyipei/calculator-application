@@ -12,6 +12,7 @@ class calculator {
         virtual double calculate(double a, double b) = 0;
         virtual string getName() = 0;
 };
+// derived class for addition
 class Add : public calculator{
     public : 
         double calculate(double a, double b) override {
@@ -19,6 +20,7 @@ class Add : public calculator{
         }
         string getName() override { return "Addition";}
 };
+// derived class for substractiion
 class Subtract : public calculator {
     public :
         double calculate(double a, double b) override {
@@ -26,6 +28,7 @@ class Subtract : public calculator {
         }
         string getName() override {return "Subtraction";}
 };
+// derived class for multiplication
 class Multiple : public calculator{
     public :
         double calculate(double a, double b) override{
@@ -33,6 +36,7 @@ class Multiple : public calculator{
         }
         string getName() override { return "Multiplication";}
 };
+// derived class for division
 class Divide : public calculator{
     public :
         double calculate(double a, double b) override {
@@ -45,8 +49,11 @@ class Divide : public calculator{
 };
 
 
+//display menu
 void Menu() {
+    cout << "______________________________________________________" << endl;
     cout << "Welcome to the calculator application!" << endl;
+    cout << "______________________________________________________" << endl;
     cout << "1. Addition" << endl;
     cout << "2. Substraction" << endl;
     cout << "3. Multiplication" << endl;
@@ -58,7 +65,7 @@ void Menu() {
 
 }
 
-
+//main function
 int main() {
     int choice;
     double number1, number2;
@@ -67,10 +74,12 @@ int main() {
         Menu();
         cin >> choice;
 
+        //exit option
         if (choice == 6) {
             cout << "Exiting the application. See you next time!" << endl;
             break;
         }
+        // fraction to decimal conversion option
         if (choice == 5) {
             double numerator, denominator;
             cout << "Enter the numerator: ";
@@ -98,7 +107,7 @@ int main() {
             
         }
     
-    
+        // Regular calculator operations
         cout << "Enter the first number: ";
         cin >> number1;
         cout << "Enter the second number: ";
@@ -106,7 +115,7 @@ int main() {
 
         calculator* calculator = nullptr;
 
-        switch(choice) {
+        switch (choice) {
             case 1: calculator = new Add(); break;
             case 2: calculator = new Subtract(); break;
             case 3: calculator = new Multiple(); break;
@@ -116,9 +125,11 @@ int main() {
                 continue;
         }
 
+        // show result
         double result = calculator -> calculate(number1, number2);
         cout << "Result of " << calculator -> getName() << ": " << result << endl;
 
+        // ask user if they want to perform another operation
         char again;
         cout << "Do you want to perform another operation? (y/n): ";
         cin >> again;
